@@ -1,0 +1,169 @@
+body{
+	position: relative;
+	background-color: #fffbbb;
+}
+#app{
+	width: 100%;
+	height: 100%;
+}
+#homepage{
+	width: 100%;
+	height: 100%;
+	background-color: #fffbbb;
+	position: relative;
+	background: url(../img/bottom.png) no-repeat left bottom;
+	background-size: 100% auto;
+}
+.top{
+	width: 100%;
+	position: relative;
+}
+.top img{
+	width: 100%;
+}
+.bottom{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.bottom img{
+	width: 100%;
+}
+.title{
+	position: absolute;
+	top: 23%;
+	left: 3.2%;
+	width: 93.6%;
+	
+}
+.title img{
+	animation: 1.5s bigAndSmall infinite linear;
+	-webkit-animation: 1.5s bigAndSmall infinite linear;
+	-moz-animation: 1.5s bigAndSmall infinite linear;
+}
+.reg{
+	position: absolute;
+	top: 10%;
+	width: 41.06%;
+	left: 29.47%;
+}
+.middle{
+	width: 92%;
+	margin: 0 auto;
+}
+.middle ul li{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.36rem;
+	height: 1.04rem;
+	background-color: white;
+	border-radius: 0.08rem;
+	position: relative;
+	border: 1px solid #333333;
+	margin-top: 0.2rem;
+}
+.middle ul li input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.38rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 0.9rem;
+	border: 0;
+	position: relative;
+}
+.middle ul li div{
+	position: absolute;
+	top: 0.34rem;
+	left: 0.36rem;
+	line-height: 0.38rem;
+	content: "电话";
+	font-size: 0.38rem;
+}
+.middle button{
+	width: 5.05rem;
+	height: 1.38rem;
+	border: 0;
+	display: block;
+	outline: 0;
+	background: url(../img/btn.png) no-repeat left top;
+	background-size: 100% 100%;
+	margin: 0.22rem auto 0;
+	
+}
+@-moz-keyframes bigAndSmall{
+	0%{
+		-moz-transform: scale(1.0,1.0);
+	}
+	50%{
+		-moz-transform: scale(0.95,0.95);
+	}
+	100%{
+		-moz-transform: scale(1.0,1.0);
+	}
+}
+@-webkit-keyframes bigAndSmall{
+	0%{
+		-webkit-transform: scale(1.0,1.0);
+	}
+	50%{
+		-webkit-transform: scale(0.95,0.95);
+	}
+	100%{
+		-webkit-transform: scale(1.0,1.0);
+	}
+}
+@keyframes bigAndSmall{
+	0%{
+		transform: scale(1.0,1.0);
+	}
+	50%{
+		transform: scale(0.95,0.95);
+	}
+	100%{
+		transform: scale(1.0,1.0);
+	}
+}
+#popWin{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.6);
+}
+.popWin{
+	width: 91.46%;
+	position: relative;
+}
+.popWin img{
+	width: 100%;
+}
+.popWin a{
+	width: 75.8%;
+	position: absolute;
+	left: 12.1%;
+	bottom: 13%;
+}
+.popWin button{
+	width: 0.61rem;
+	height: 0.61rem;
+	position: absolute;
+	right: 8%;
+	top: -5%;
+	border: 0;
+	background: url(../img/close.png) no-repeat left top;
+	background-size: 100% 100%;
+}
